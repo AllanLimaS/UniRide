@@ -4,5 +4,6 @@ com o servidor funcionando,
 deve-se abrir no terminal esse projeto presente, 
 rodar os seguintes comandos:
 
-npm install 
+npm install
+Ee depois:
 npm start
