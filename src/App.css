@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/Fundo.svg');
+  font-family: 'Inter', sans-serif;
+}
+.login-container, .register-container{
+  display: flex;
+  flex-direction: column;
+  padding: 40px 15px 40px 15px;
+  border: 1px solid var(--gray-400, #CED4DA);
+  background: var(--default-white, #FFF);
+  border-radius: 10px;
+  align-items: center;
+
+}
+.login-container form{
+  width: 50%;
+}
+.login-container input{
+  background-color: var(--body-text-base-color, #CED4DA);
+
+}
+input{
+  padding:0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--stroke-input, #CED4DA);
+  background: var(--default-white, #FFF);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  gap:15px;
+}
+.row input{
+  width: 100%;
+}
+a{
+  padding: 1rem 0;
+  text-decoration: none;
+}
+form button{
+  width: 100%;
+}
+button{
+  width: 50%;
+  margin-top: 16px;
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  color: var(--default-white, #FFF);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  border-radius: 4px;
+  border: 3px solid rgba(0, 0, 0, 0.13);
+  background: #7749F8;
+}
+.logo-img {
+ padding: 2rem;
+}
+
+/* Estilo do modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal button{
+  width: 75%;
+  display: initial;
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+  text-align: center;
+  border: 1px solid var(--gray-400, #CED4DA);
+  background: var(--default-white, #FFF);
+  border-radius: 10px;
+}
+
+/* Estilo do botão de retorno */
+#returnToLoginButton {
+  margin-top: 10px;
+  margin: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
